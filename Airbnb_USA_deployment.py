@@ -1,17 +1,10 @@
+
 import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
-import gdown
-import os
+import plotly.express as px
 
-# -------------------------
-# Download required files if not present
-# -------------------------
-if not os.path.exists("cleaned_df.csv"):
-    url_cleaned = "https://drive.google.com/uc?id=1_vNuJFk75sp1tBx7I4a4fZu_t8dJJWK3"
-    gdown.download(url_cleaned, "cleaned_df.csv", quiet=False)
-    
     
 st.set_page_config(layout= 'wide', page_title= 'Airbnb_USA_prices')
 html_title = "<h1 style=color:Black;text-align:center;> Airbnb EDA Project </h1>"
