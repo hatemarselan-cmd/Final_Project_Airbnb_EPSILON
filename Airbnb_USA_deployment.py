@@ -236,61 +236,62 @@ if page == 'Airbnb Price Predictor':
     # -------------------------
     # NUMERIC INPUTS (FROM DATA)
     # -------------------------
+
     accommodates = st.slider(
-        'Accommodates',
-        min_value=int(df_ML.accommodates.min()),
-        max_value=int(df_ML.accommodates.max()),
-        step=1
+        "Accommodates",
+        int(df_ML.accommodates.min()),
+        int(df_ML.accommodates.max()),
+        1
     )
 
     bathrooms = st.slider(
-        'Bathrooms',
-        min_value=int(df_ML.bathrooms.min()),
-        max_value=int(df_ML.bathrooms.max()),
-        step=1
+        "Bathrooms",
+        int(df_ML.bathrooms.min()),
+        int(df_ML.bathrooms.max()),
+        1
     )
 
     bedrooms = st.slider(
-        'Bedrooms',
-        min_value=int(df_ML.bedrooms.min()),
-        max_value=int(df_ML.bedrooms.max()),
-        step=1
+        "Bedrooms",
+        int(df_ML.bedrooms.min()),
+        int(df_ML.bedrooms.max()),
+        1
     )
 
     beds = st.slider(
-        'Beds',
-        min_value=int(df_ML.beds.min()),
-        max_value=int(df_ML.beds.max()),
-        step=1
+        "Beds",
+        int(df_ML.beds.min()),
+        int(df_ML.beds.max()),
+        1
     )
 
-    number_of_reviews = st.slider(
-        'Number of Reviews',
+    # Large range → number_input (only min_value)
+    number_of_reviews = st.number_input(
+        "Number of Reviews",
         min_value=int(df_ML.number_of_reviews.min()),
-        max_value=int(df_ML.number_of_reviews.max()),
         step=1
     )
 
     review_scores_rating = st.slider(
-        'Review Score Rating',
-        min_value=float(df_ML.review_scores_rating.min()),
-        max_value=float(df_ML.review_scores_rating.max()),
-        step=0.5
+        "Review Score Rating",
+        float(df_ML.review_scores_rating.min()),
+        float(df_ML.review_scores_rating.max()),
+        0.1
     )
 
-    amenities_count = st.slider(
-        'Amenities Count',
+    # Large range → number_input (only min_value)
+    amenities_count = st.number_input(
+        "Amenities Count",
         min_value=int(df_ML.amenities_count.min()),
-        max_value=int(df_ML.amenities_count.max()),
         step=1
     )
 
-    host_experience_years = st.slider(
-        'Host Experience (years)',
+    host_experience_years = st.number_input(
+        "Host Experience (Years)",
         min_value=float(df_ML.host_experience_years.min()),
-        max_value=float(df_ML.host_experience_years.max()),
-        step=0.5
+        step=0.1
     )
+
 
     # -------------------------
     # FLOAT INPUTS
