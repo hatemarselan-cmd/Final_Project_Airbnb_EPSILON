@@ -1,0 +1,86 @@
+/* GLOBAL DARK THEME */
+body, .main, [data-testid="stAppViewContainer"], [data-testid="block-container"] {
+    background-color: #0A0F1F !important;
+    color: #E2E8F0 !important;
+}
+
+/* TITLES */
+.main-title {
+    text-align: center;
+    font-size: 45px;
+    color: #00E6FF;
+    font-weight: 700;
+    text-shadow: 0 0 15px #00E6FF;
+}
+.subtitle {
+    text-align: center;
+    color: #9DE3FF;
+    font-size: 18px;
+}
+
+/* SIDEBAR */
+section[data-testid="stSidebar"] {
+    background: #050814;
+    border-right: 1px solid #00E6FF66;
+    box-shadow: inset 0 0 20px #00E6FF33;
+}
+.sidebar-title {
+    color: #00E6FF;
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.sidebar-divider {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #00E6FF, transparent);
+}
+.glow-text {
+    color: #00E6FF;
+    text-shadow: 0 0 10px #00E6FF;
+}
+
+/* CARDS */
+.neon-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid #00E6FF55;
+    border-radius: 16px;
+    padding: 20px;
+    backdrop-filter: blur(16px);
+    box-shadow: 0 0 20px #00E6FF22;
+    transition: 0.3s ease;
+}
+.neon-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px #00E6FF77;
+}
+
+/* METRICS */
+.metric-box {
+    background: rgba(0, 230, 255, 0.06);
+    border: 1px solid #00E6FF55;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+.metric-label {
+    font-size: 16px;
+    color: #9DE3FF;
+}
+.metric-value {
+    font-size: 26px;
+    font-weight: bold;
+    color: #00E6FF;
+    text-shadow: 0 0 10px #00E6FF;
+}
+
+/* TABLE HEADERS */
+thead tr th {
+    background-color: #0D1326 !important;
+    color: #00E6FF !important;
+}
+
+/* PLOTLY */
+.js-plotly-plot {
+    background-color: #0A0F1F !important;
+}
