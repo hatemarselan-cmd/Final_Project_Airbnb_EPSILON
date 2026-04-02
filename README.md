@@ -1,4 +1,4 @@
-Project Title: Exploratory Data Analysis (EDA)& ML of an Airbnb Dataset Live Link: https://finalprojectairbnbepsilon-hjhzwwcuinupgachzkd56d.streamlit.app/
+Project Title: Exploratory Data Analysis (EDA)& ML of an Airbnb Dataset Live Link: https://finalprojectairbnbepsilon-5bp39abpuvl6i36sphxpej.streamlit.app
 
 Description: This interactive Streamlit app presents a comprehensive exploratory data analysis of an Airbnb listings dataset. It enables users to:
 
